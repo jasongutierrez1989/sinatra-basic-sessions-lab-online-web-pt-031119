@@ -14,6 +14,6 @@ class App < Sinatra::Base
   post '/checkout' do
     session_secretitem = params["item"]
     @sessions << session_secretitem
-    @sessions[:item] = item
+    @sessions[:item]
   end
 end
